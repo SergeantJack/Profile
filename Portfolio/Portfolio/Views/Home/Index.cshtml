@@ -1,0 +1,42 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Welcome to My Portfolio</h1>
+    <div class="clearfix">
+        <div class="col-lg-2">
+            <img alt="flag" class="img-responsive" src="~/Images/flag.jpg" />
+        </div>
+        <p class="lead">German-engineered for performance and stability.</p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-10 col-lg-offset-1">
+        <h3 class="text-center">What Is German Engineered?</h3>
+        <p class="text-center">
+            German-engineered is my personal assurance of quality and performance. Taken from the quality of my lineage, I embrace the
+            dedeication and industrialism of my ancestors. I guarantee that anything I build or create will perform like an Audi,
+            be reliable like a Tiger, and be friendly like a Volkswagen.
+        </p>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <h2>About Me</h2>
+        <p>Get to know me on a more peronsal level. Get to know the man behind the machine.</p>
+        <p>@Html.ActionLink("Learn more »", "Index", "About", null, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>My Skills</h2>
+        <p>My professional and interpersonal skills and abilities. Learn just what I can do.</p>
+        <p>@Html.ActionLink("Learn more »", "Index", "Skills", null, new { @class = "btn btn-default" })</p>
+    </div>
+    <div class="col-md-4">
+        <h2>Projects</h2>
+        <p>See examples of my skills in action. Divided up into categories based on language.</p>
+        <p>@Html.ActionLink("Learn more »", "Index", "Projects", null, new { @class = "btn btn-default" })</p>
+    </div>
+</div>
