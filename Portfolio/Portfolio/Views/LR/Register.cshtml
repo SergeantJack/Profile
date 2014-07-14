@@ -1,0 +1,42 @@
+﻿@model Portfolio.Models.LRModels.LRLogin
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Success!</h2>
+@Html.ActionLink("Back", "Index", null, new { @class = "btn btn-default" })
+<hr />
+
+<p>Thank you for registering! Your account details are listed below!</p>
+
+<div class="row">
+    <p><strong class="col-lg-2">First Name</strong> @Model.FirstName</p>
+</div>
+
+<div class="row">
+    <p><strong class="col-lg-2">Last Name</strong> @Model.LastName</p>
+</div>
+
+<div class="row">
+    <p><strong class="col-lg-2">Full Name</strong> @Model.FullName</p>
+</div>
+
+<div class="row">
+    <p><strong class="col-lg-2">Email</strong> @Model.Email</p>
+</div>
+
+<div class="row">
+    <p><strong class="col-lg-2">D.O.B.</strong> @Model.DOB</p>
+</div>
+
+<div class="row">
+    <p><strong class="col-lg-2">City</strong> @Model.City</p>
+</div>
+
+<div class="row">
+    <p><strong class="col-lg-2">Country</strong> @Model.Country</p>
+</div>
+
+<div class="row">
+    <p><strong class="col-lg-2">Provider</strong> @Model.Provider</p>
+</div>

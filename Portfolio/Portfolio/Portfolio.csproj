@@ -39,6 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="LoginRadius.sdk">
+      <HintPath>C:\Users\Jack\Downloads\Dot-Net-SDK-master\Dot-Net-SDK-master\sdk\bin\Debug\LoginRadius.sdk.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -168,6 +171,7 @@
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\LRModels\LRLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -227,9 +231,13 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\LR\FB.cshtml" />
+    <Content Include="Views\LR\LR.cshtml" />
+    <Content Include="Views\LR\Callback.cshtml" />
+    <Content Include="Views\LR\Register.cshtml" />
+    <Content Include="Views\LR\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
+    <Folder Include="App_Data\Users\" />
     <Folder Include="Views\Languages\" />
   </ItemGroup>
   <ItemGroup>
