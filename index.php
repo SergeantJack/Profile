@@ -11,7 +11,7 @@ include('template/header.php');
 <div class="jumbotron">
     <h1>Jack Schaible's Profile Site</h1>
     <p>Welcome to my profile site. While you're here, why don't you check out <a href="/Skills.php">what I can do</a> or <a href="/Projects.php">what I'm working on/what I've done</a>? Or,
-        you could take a look at one of my profiles. I also have a blog <a href="http://www.jackschaible.ca/blog">here</a>, if you want to check that out!</p>
+        you could take a look at one of my profiles. I also have a blog <a href="http://blog.jackschaible.ca/">here</a>, if you want to check that out!</p>
     <div class="text-center">
         <ul class="list-inline lead">
             <li><a title="GitHub" href="https://github.com/JackSchaible" target="_blank"><i class="fa fa-github-alt"></i> GitHub</a></li>
@@ -24,10 +24,10 @@ include('template/header.php');
     <div class="well">
         <p><strong>New & Favorite Projects</strong></p>
         <ul>
-            <li><a target="_blank" href="http://www.jackschaible.ca/blog/category/ffe/">FastForward Express</a></li>
-            <li><a target="_blank" href="http://www.jackschaible.ca/blog/category/fleetcom/">Fleetcom v3</a></li>
-            <li><a target="_blank" href="http://www.jackschaible.ca/blog/category/profile/">This Site</a></li>
-            <li><a target="_blank" href="http://www.jackschaible.ca/blog/category/school/">School!</a></li>
+            <li><a target="_blank" href="http://dm.jackschaible.ca/">DM Tools!</a></li>
+            <li><a target="_blank" href="http://blog.jackschaible.ca/category/ffe/">FastForward Express</a></li>
+            <li><a target="_blank" href="http://blog.jackschaible.ca/category/fleetcom/">Fleetcom v3</a></li>
+            <li><a target="_blank" href="http://blog.jackschaible.ca/category/profile/">This Site</a></li>
         </ul>
     </div>
 </div>
@@ -47,7 +47,7 @@ include('template/footer.php')
 <script type="text/javascript">
     $(document).ready(function(){
         $.ajax({
-            url: 'http://www.jackschaible.ca/blog/wp-json/wp/v2/posts',
+            url: 'http://blog.jackschaible.ca/wp-json/wp/v2/posts',
             type: 'GET',
             success: function(e){
                 var posts = e;
