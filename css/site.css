@@ -1,0 +1,13 @@
+body {
+    margin-top: 50px;
+}
+
+a.footer-link {
+    width: 15px;
+    margin: 2px;
+    display: inline-block;
+}
+
+.white {
+    color: #EEE;
+}
